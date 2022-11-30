@@ -14,7 +14,7 @@ This Challenge is divided into three parts: data modelling, data engineering, an
 # Data Modelling
 CSV Files with data sets have been inspected, and DBD created.
 
-[Employee SQL DBD.pdf](https://github.com/jonowood/sql-challenge/files/10120450/Employee.SQL.DBD.pdf)
+![Employee SQL DBD](https://user-images.githubusercontent.com/113280744/204730035-db9b5c7a-61d8-42d6-ba92-8a3adaa5b3ff.png)
 
 # Data Engineering
 Table Schema created for all tables in data set.
