@@ -1,5 +1,3 @@
-DROP TABLE Salaries, Dept_manager, Dept_emp, Employees, Titles, Departments;
-
 -- Create a new table for Departments
 
 CREATE TABLE Departments (
