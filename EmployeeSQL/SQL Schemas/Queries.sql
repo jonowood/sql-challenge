@@ -1,13 +1,10 @@
---List the employee number, last name, first name, sex, and salary of each employee.
-
-	--CREATE VIEW employee_salaries AS 
+--List the employee number, last name, first name, sex, and salary of each employee. 
 	
-SELECT e.emp_no, e.last_name, e.first_name, e.sex, s.salary 
+SELECT e.emp_no, e.last_name, e.first_name, e.sex, CAST(s.salary AS MONEY) 
 FROM Employees as e
 INNER JOIN Salaries as s 
 on e.emp_no=s.emp_no;
 
-	--SELECT * FROM employee_salaries
 
 --List the first name, last name, and hire date for the employees who were hired in 1986.
 
@@ -60,3 +57,9 @@ ON e.emp_no = de.emp_no
 WHERE dep.dept_name = 'Sales' OR dep.dept_name = 'Development';
 
 --List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+
+SELECT last_name, 
+COUNT(last_name) as count
+FROM employees 
+GROUP BY last_name
+ORDER BY count DESC;
