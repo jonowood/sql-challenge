@@ -2,22 +2,30 @@
 
 --CREATE VIEW employee_salaries AS 
 SELECT e.emp_no, e.last_name, e.first_name, e.sex, s.salary 
-FROM employees as e
-INNER JOIN salaries as s 
+FROM Employees as e
+INNER JOIN Salaries as s 
 on e.emp_no=s.emp_no;
 --SELECT * FROM employee_salaries
 
 --List the first name, last name, and hire date for the employees who were hired in 1986.
 
 SELECT first_name, last_name, hire_date
-FROM employees 
+FROM Employees 
 WHERE hire_date LIKE '%1986';
 
 --List the manager of each department along with their department number, department name, employee number, last name, and first name.
 
-
+SELECT dm.emp_no, dep.dept_no, dep.dept_name, e.last_name, e.first_name
+FROM Departments as dep
+JOIN Dept_manager as dm
+ON dep.dept_no = dm.dept_no
+JOIN Employees as e
+ON e.emp_no = dm.emp_no
 
 --List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+
+
+
 
 --List the first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
 
