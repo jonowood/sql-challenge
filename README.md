@@ -31,18 +31,33 @@ The following Queries have been created for this database:
 8. List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
 
 # Submission
+The following files are included in this submission;
+
 EmployeeSQL\
---data\
-----departments.csv
-----dept_emp.csv
-----dept_manager.csv
-----employees.csv
-----salaries.csv
-----titles.csv
---Database Diagram\
-----Employee SQL DBD.pdf
-----Employee SQL DBD.png
---SQL Schemas\
-----Queries.sql
-----Table_Schemata.sql
+
+..data\
+
+....departments.csv
+
+....dept_emp.csv
+
+....dept_manager.csv
+
+....employees.csv
+
+....salaries.csv
+
+....titles.csv
+
+..Database Diagram\
+
+....Employee SQL DBD.pdf
+
+....Employee SQL DBD.png
+
+..SQL Schemas\
+
+....Queries.sql
+
+....Table_Schemata.sql
 
